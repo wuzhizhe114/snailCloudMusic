@@ -22,13 +22,48 @@ setStore(store)
 export default class extends wepy.app {
   config = {
     pages: [
-      'pages/index'
+      'pages/find/index',
+      'pages/my/index',
+      'pages/play/index',
+      'pages/account/index'
     ],
     window: {
       backgroundTextStyle: 'light',
-      navigationBarBackgroundColor: '#fff',
-      navigationBarTitleText: 'WeChat',
-      navigationBarTextStyle: 'black'
+      navigationBarBackgroundColor: '#D43C33',
+      navigationBarTitleText: '蜗牛云音乐',
+      navigationBarTextStyle: 'white',
+      backgroundColor: '#FBFCFD'
+    },
+    tabBar: {
+      backgroundColor: '#2A2C2E',
+      color: '#a7a7a7',
+      selectedColor: '#fff',
+      list: [
+        {
+          selectedIconPath: './images/find1.png',
+          iconPath: './images/find.png',
+          pagePath: 'pages/find/index',
+          text: '发现音乐'
+        },
+        {
+          selectedIconPath: './images/my1.png',
+          iconPath: './images/my.png',
+          pagePath: 'pages/my/index',
+          text: '我的音乐'
+        },
+        {
+          selectedIconPath: './images/now1.png',
+          iconPath: './images/now.png',
+          pagePath: 'pages/play/index',
+          text: '正在播放'
+        },
+        {
+          selectedIconPath: './images/account1.png',
+          iconPath: './images/account.png',
+          pagePath: 'pages/account/index',
+          text: '个人中心'
+        }
+      ]
     }
   }
 

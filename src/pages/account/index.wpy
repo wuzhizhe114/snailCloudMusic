@@ -1,0 +1,24 @@
+<template lang="wxml">
+    <view>
+      <text>个人中心</text>
+    </view>
+</template>
+
+<style lang="less">
+
+</style>
+
+<script>
+import wepy from 'wepy'
+
+export default class Index extends wepy.page {
+  config = {};
+  components = {};
+
+  data = {};
+  methods = {};
+
+  events = {};
+  onLoad() {};
+}
+</script>

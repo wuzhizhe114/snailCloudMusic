@@ -1,7 +1,7 @@
 {
   "name": "snail_cloud_music",
   "version": "0.0.2",
-  "description": "网易云音乐-小程序[C（尝试）（尝试））",
+  "description": "蜗牛云音乐-小程序（尝试）",
   "main": "dist/app.js",
   "scripts": {
     "dev": "wepy build --watch",
