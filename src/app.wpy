@@ -1,12 +1,5 @@
 <style lang="less">
-.container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  box-sizing: border-box;
-}
+
 </style>
 
 <script>
@@ -29,37 +22,37 @@ export default class extends wepy.app {
     ],
     window: {
       backgroundTextStyle: 'light',
-      navigationBarBackgroundColor: '#D43C33',
+      navigationBarBackgroundColor: '#827f2e',
       navigationBarTitleText: '蜗牛云音乐',
       navigationBarTextStyle: 'white',
       backgroundColor: '#FBFCFD'
     },
     tabBar: {
-      backgroundColor: '#2A2C2E',
+      backgroundColor: '#524b38',
       color: '#a7a7a7',
       selectedColor: '#fff',
       list: [
         {
-          selectedIconPath: './images/find1.png',
-          iconPath: './images/find.png',
+          selectedIconPath: 'images/find1.png',
+          iconPath: 'images/find.png',
           pagePath: 'pages/find/index',
           text: '发现音乐'
         },
         {
-          selectedIconPath: './images/my1.png',
-          iconPath: './images/my.png',
+          selectedIconPath: 'images/my1.png',
+          iconPath: 'images/my.png',
           pagePath: 'pages/my/index',
           text: '我的音乐'
         },
         {
-          selectedIconPath: './images/now1.png',
-          iconPath: './images/now.png',
+          selectedIconPath: 'images/now1.png',
+          iconPath: 'images/now.png',
           pagePath: 'pages/play/index',
           text: '正在播放'
         },
         {
-          selectedIconPath: './images/account1.png',
-          iconPath: './images/account.png',
+          selectedIconPath: 'images/account1.png',
+          iconPath: 'images/account.png',
           pagePath: 'pages/account/index',
           text: '个人中心'
         }

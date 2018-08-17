@@ -20,7 +20,7 @@ export default class Index extends wepy.page {
 
   events = {};
   onLoad() {
-    console.log('我的音乐');
+    // console.log('我的音乐');
   };
 }
 </script>

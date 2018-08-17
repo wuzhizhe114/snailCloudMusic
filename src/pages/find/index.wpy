@@ -1,21 +1,33 @@
 <template lang="wxml">
-    <view>
-      <text>发现音乐</text>
-    </view>
+  <i-panel>
+    <i-input class="search-input" value="{{ searchValue }}" type="text" placeholder="请输入关键字" />
+    <i-button class="search-button" type="primary" inline="true" size="small">搜索</i-button>
+  </i-panel>
 </template>
 
 <style lang="less">
-
+  .search-input, 
+  .search-button {
+    float: left;
+  }
 </style>
 
 <script>
 import wepy from 'wepy'
 
 export default class Index extends wepy.page {
-  config = {};
+  config = {
+    usingComponents: {
+      'i-button': '../iview/button/index',
+      'i-input': '../iview/input/index',
+      'i-panel': '../iview/panel/index'
+    }
+  };
   components = {};
 
-  data = {};
+  data = {
+    searchValue: ''
+  };
   methods = {};
 
   events = {};
